@@ -13,7 +13,7 @@ public class SetsDemo {
         set.add(19);
         set.add(8);
 
-        set.forEach(ele -> System.out.println(ele));
+        set.forEach(System.out::println);
 
         Set<Integer> linkedSet = new LinkedHashSet<>();
         linkedSet.add(12);
@@ -21,7 +21,7 @@ public class SetsDemo {
         linkedSet.add(19);
         linkedSet.add(8);
         System.out.println("-----------------");
-        linkedSet.forEach(ele -> System.out.println(ele));
+        linkedSet.forEach(System.out::println);
 
         Set<Integer> treeSet = new TreeSet<>();
         treeSet.add(12);
@@ -29,6 +29,6 @@ public class SetsDemo {
         treeSet.add(19);
         treeSet.add(8);
         System.out.println("-----------------");
-        treeSet.forEach(ele -> System.out.println(ele));
+        treeSet.forEach(System.out::println);
     }
 }
